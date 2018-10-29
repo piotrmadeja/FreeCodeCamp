@@ -1,0 +1,190 @@
+body {
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+
+#header {
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #ffff;
+  border-bottom: 5px solid rgb(87, 86, 86);
+  float: left;
+}
+
+#header-img {
+  max-width: 80px;
+  height: auto; 
+  float: left;
+  display: block;
+}
+
+#header a {
+  width: 80px;
+  height: 80px;
+}
+#header a:hover {
+cursor: pointer;
+}
+
+#nav-bar ul {
+  text-align: right;
+  margin: 0 auto;
+}
+
+
+#nav-bar {
+  max-width: 100%;
+  height: auto;;
+}
+
+#nav-bar ul li   {
+  display: inline-block;
+  height: 80px;
+  width: 100px;
+  line-height: 80px;
+  text-align: center;
+  padding: 0 100px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: black;
+  font-size: 22px;
+  font-family: 'verdana';
+}
+
+.nav-link:hover {
+  border-bottom: 3px solid rgb(87, 86, 86);
+  cursor: pointer;
+}
+
+#about {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'verdana';
+  margin-top: 80px;
+}
+
+#about h1 {
+  padding: 40px;
+  font-size: 33px;
+  background-color: rgb(158, 156, 156);
+}
+
+#about p {
+  font-size: 18px;
+}
+
+#video {
+  max-width: 40%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+#goals {
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgb(158, 156, 156);
+}
+
+#goals h1 {
+  font-size: 33px;
+  font-family: 'verdana';
+}
+#goals ul li  {
+  font-family: 'verdana';
+}
+
+#subscribe {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 100%;
+}
+
+#subscribe p {
+  font-family: 'verdana';
+  font-size: 22px;
+  padding: 20px 0 10px 0;
+}
+
+#form #email {
+  width: 300px;
+  height: 25px;
+}
+
+#form input {
+  margin: 0 20px;
+}
+
+#submit {
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(158, 156, 156);
+  width: 150px;
+  height: 30px;
+  font-size: 17px;
+  font-family: 'verdana';
+}
+
+#submit:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+  cursor: pointer;
+}
+@media (max-width: 1000px) {
+  #nav-bar ul li {
+    padding: 20px;
+    margin-right: 20px;
+  }
+}
+
+
+
+@media (max-width: 600px) {
+  body { 
+  }
+  #header {
+    position: relative;
+    margin-top: -40px;
+  }
+  #nav-bar {
+    text-align: center;
+  }
+  #nav-bar ul li {
+    display: block;
+    padding: 0;
+    width: 100vw;
+    margin-left: -50px;;
+  }
+
+  #header-img {
+    float: none;
+    margin: 0 auto;
+    max-width: 200px;
+    height: 200px;
+  }
+
+  #video {
+    max-width: 100%;
+  }
+  #form #email {
+    width: 250px;
+    margin-bottom: 20px;
+  }
+}

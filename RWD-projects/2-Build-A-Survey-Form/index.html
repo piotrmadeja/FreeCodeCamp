@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Build a survey form</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' type='text/css' href='style.css'>
+  </head>
+  <body>
+    <div class='title'>
+      <h1 id='title'>Survey form</h1>
+    </div>
+    <form id='survey-form'>
+      <p id='description'>Short survey form for beginner programmers.</p>
+      <div class='form-container'>
+        <div class='labels'>
+          <label id='name-label' for='name'>*Name:</label>
+        </div>
+        <div>
+          <input id='name' type='text' name='name' placeholder='Enter name' required=''>
+        </div>
+        <div class='labels'>
+          <label id='email-label' for='e-mail'>*E-mail:</label>
+        </div>
+        <div>
+          <input id='email' type='email' name='e-mail' placeholder='email' required=''>
+        </div>
+        <div class='labels'>
+          <label id='number-label' for='age'>*Age:</label>
+        </div>
+        <div>
+          <input id='number' type='number' name='age' min ='16' max='99' placeholder='Enter age' required=''>
+        </div>
+        <div class='labels'>
+          <label for='select'>Which programming language do you learn ?</label>
+        </div>
+        <div>
+          <select id='dropdown'>
+            <option value='javascript'>Javascript</option>
+            <option value='C#'>C#</option>
+            <option value='java'>Java</option>
+            <option value='C++'>C++</option>
+            <option value='python'>Python</option>
+          </select>
+        </div>
+        <div class='labels'>
+          <label for='radio'>Why are you learning programming ?</label>
+        </div>
+        <div>
+          <input type='radio' name='reason' value='money'>I want to earn more money.<br>
+          <input type='radio' name='reason' value='job'>I want to change my currrent job.<br>
+          <input type='radio' name='reason' value='hobby'>It's just my hobby...
+        </div>
+        <div class='labels'>
+          <label for='skills'>Other things you do to improve tour programming skills:</label>
+        </div>
+        <div id='checkboxes'>
+          <ul>
+            <li><input type='checkbox' name='books' value='1'>I'm reading books.</li>
+            <li><input type='checkbox' name='meetings' value='2'>I'm attending meetings.</li>
+            <li><input type='checkbox' name='web' value='3'>I'm cheking web for materials.</li>
+            <li><input type='checkbox' name='ask' value='4'>I'm asking other programmers.</li>
+            <li><input type='checkbox' name='bootcamps' value='5'>I'm attending bootcamps.</li>
+            <li><input type='checkbox' name='code' value='6'>I'm writing a lot of code.</li>
+          </ul>
+        </div>
+        <div class='labels'>
+          <label for='textarea'>In Your opinion what is most fun thing in learning programming ?</label>
+        </div>
+        <div>
+          <textarea type='text' name='textarea' value='opinion' placeholder='Type text here' required =''></textarea>
+        </div>
+        <div class='submit'>
+          <p class='required'>* Required</p>
+          <button id='submit'><input type='submit' value='Submit form'></button>
+        </div>
+      </div>
+    </form>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>  
+</html>
